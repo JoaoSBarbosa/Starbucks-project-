@@ -199,3 +199,30 @@ header .line{
   background-position: center;
   background-size: cover;
 }
+/*
+  Estilização da area 3
+*/
+
+.area3{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.area3--content{
+  padding: 285px 80px;
+  background-image: url('../img/bg2.jpg');
+  background-position: left;
+  background-size: cover;
+ 
+}
+
+.area3--text{
+  margin-bottom: 3.1rem;
+  line-height: 1.56rem;
+}
+.area3--img1{
+  background-image: url('../img/f5.jpg');
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  
+}
