@@ -3,8 +3,6 @@
 */
 :root{
   --primary-color: #fff;
-  --secundary-color: #ff52ff;
-  --bg-color: rgb(174, 173, 173);
   --border-color: #117850;
   --max-container: 1140px;
 }
@@ -28,16 +26,46 @@ body{
   Estilização do HEADER 
 */
 
-header{
-
+.container{
+  max-width: var(--max-container);
+  margin: 0 auto;
+}
+.bar{
+  background-color: var(--border-color);
+  height: 22px;
+  width: 168px;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 6.2rem;
+  margin: 0;
+  margin-bottom: 1.87rem;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  margin: 20px 0;
+  
+}
+.button{
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #454545;
+  border-radius: 3px;
+  color: #454545;
+  text-decoration: none;
+}
+.button:hover{
+  color: #fff;
+  background-color: #454545;
 }
 header .line{
   background-color: var(--border-color);
   height: 10px;
-}
-.container{
-  max-width: var(--max-container);
-  margin: 0 auto;
 }
 .header--area{
   display: flex;
@@ -56,6 +84,8 @@ header .line{
 }
 .header--search form{
   display: flex;
+ 
+
 }
 .header--search input{
   font-size: 1rem;
@@ -95,14 +125,7 @@ header .line{
   background-size: cover;
   padding: 6rem 0;
 }
-.banner h1{
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-size: 6rem;
-  line-height: 6.2rem;
-  margin: 0;
-  margin-bottom: 1.87rem;
-}
+
 .banner--images{
   margin-top: 4rem;
 }
@@ -112,4 +135,38 @@ header .line{
   border: 6px solid var(--border-color);
   border-radius: 50%;
   margin-right: 2.2rem;
+}
+
+/*
+  Estilização da seção 1
+*/
+.area1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.area1--content{
+  padding: 80px;
+}
+.area1--quote{
+  margin-bottom: 30px;
+}
+.area1--text{
+  margin-bottom: 3.1rem;
+  line-height: 1.56rem;
+}
+.area1--img1{
+  /* grid-column: 1/2;
+  grid-row: 2/3; */
+
+  background-image: url('../img/f2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+.area1--img2{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-image: url('../img/f1.jpg');
+  background-position: center;
+  background-size: cover;
 }
