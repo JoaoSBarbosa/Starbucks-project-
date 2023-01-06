@@ -259,37 +259,139 @@ footer{
   color: #fff;
   padding: 80px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 .footer--area{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.dev{
+  border-right: 1px solid #454545;
+  padding-right: 1rem;
 }
 
+.creditos,
+.dev{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 .dev--icones{
   display: flex;
   justify-content: space-around;
-}
-.creditos,
-.dev{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }
 footer a{
   text-decoration: none;
   color: var(--secundary-color);
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+footer i{
+  font-size: 3rem;
+  margin-top: 1.5rem;
 }
 footer p{
   margin: 1rem 0;
 }
-
-footer i{
-  font-size: 3rem;
-  color: var(--secundary-color);
+.creditos a{
+  margin-top: 1.6rem;
 }
-footer i:hover,
+
 footer a:hover{
   color: var(--secundary-color-hover);
+}
+
+@media (min-width:769px) and (max-width: 1040px){
+  .container{
+    padding: 0 25px;
+  }
+  footer i{
+    margin-right: 2rem;
+  }
+}
+@media(min-width:426px) and (max-width:768px){
+  .container{
+    padding: 0 35px;
+  }
+  .area1{
+    grid-template-columns: 3fr 2fr;
+  }
+  .area2{
+    grid-template-columns: 2fr 3fr;
+  }
+  .area3{
+    grid-template-columns: 3fr 2fr;
+  }
+  h1{
+    font-size: 4.8rem;
+  }
+  footer i{
+    margin-right: 2rem;
+  }
+}
+@media(max-width: 425px){
+  .header--menu{
+    margin-left: 20px;
+  }
+  .container{
+    padding: 0 20px;
+  }
+  .header--search input{
+    max-width: 130px;
+  }
+  h1{
+    font-size: 40px;
+    line-height: 60px;
+  }
+  h2{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .banner--images img{
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .area1,
+  .area2,
+  .area3,
+  .area4{
+    grid-template-columns: 1fr;
+  }
+  .area1--content,
+  .area2--content,
+  .area3--content,
+  .area4--content{
+    padding: 40px;
+  }
+  .area5{
+    height: 200px;
+  }
+  footer{
+    font-size: 1.3rem;
+    padding: 10px;
+
+  }
+  .footer--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev{
+    border-right: none;
+    border-bottom: 1px solid #454545;
+    padding-bottom: 2rem;
+    width: 300px;
+  }
+  footer i{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
 }
