@@ -6,6 +6,7 @@
   --secundary-color: #ff52ff;
   --bg-color: rgb(174, 173, 173);
   --border-color: #117850;
+  --max-container: 1140px;
 }
 /*
   Geral
@@ -23,10 +24,35 @@ body{
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
 
+/*
+  Estilização do HEADER 
+*/
+
 header{
 
 }
 header .line{
   background-color: var(--border-color);
   height: 10px;
+}
+.container{
+  max-width: var(--max-container);
+  margin: 0 auto;
+}
+.header--area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.25rem;
+}
+
+.header-left img{
+  height: 4rem;
+  width: 4rem;
+}
+.header--search input{
+  font-size: 1rem;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  outline: 0;
 }
