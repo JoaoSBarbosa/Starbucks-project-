@@ -1,0 +1,32 @@
+/*
+  Variaveis
+*/
+:root{
+  --primary-color: #fff;
+  --secundary-color: #ff52ff;
+  --bg-color: rgb(174, 173, 173);
+  --border-color: #117850;
+}
+/*
+  Geral
+*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/*
+  Fontes-Google
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+header{
+
+}
+header .line{
+  background-color: var(--border-color);
+  height: 10px;
+}

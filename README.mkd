@@ -1,0 +1,12 @@
+## Starbucks Project  ☕
+
+### Este projeto visa recriar um layout da Starbucks com a finalidade de treinar o bom uso do display grid.
+
+
+
+Estudos alcançados:
+
+- Variáveis CSS
+
+- Display grid
+- 
