@@ -202,7 +202,6 @@ header .line{
 /*
   Estilização da area 3
 */
-
 .area3{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -212,9 +211,7 @@ header .line{
   background-image: url('../img/bg2.jpg');
   background-position: left;
   background-size: cover;
- 
 }
-
 .area3--text{
   margin-bottom: 3.1rem;
   line-height: 1.56rem;
@@ -222,7 +219,27 @@ header .line{
 .area3--img1{
   background-image: url('../img/f5.jpg');
   background-position: center;
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  
+  background-size: cover;  
+}
+/*
+  Estilização da area 4
+*/
+
+.area4{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  background-color: #e8e9ee;
+
+}
+.area4--content{
+  padding: 9.37rem 5rem;
+}
+.area4--text{
+  margin-bottom: 3.125rem;
+  line-height: 1.562rem;
+}
+.area4--img1{
+  background-image: url('../img/bg3.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
 }
