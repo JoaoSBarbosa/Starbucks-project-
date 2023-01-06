@@ -50,9 +50,37 @@ header .line{
   height: 4rem;
   width: 4rem;
 }
+.header-right{
+  display: flex;
+  align-items: center;
+}
+.header--search form{
+  display: flex;
+}
 .header--search input{
   font-size: 1rem;
-  padding: 7px 10px;
+  padding: 8px 15px;
   border: 1px solid #ccc;
   outline: 0;
+  width: 100%;
+  max-width: 15.62rem;
+}
+.header--search button{
+  border: 0;
+  background: transparent;
+  margin-left: -25px;
+  cursor: pointer;
+}
+
+.header--search button img{
+  height: 1rem;
+  width: 1rem;
+}
+.header--menu{
+  margin-left: 3.19rem;
+  cursor: pointer;
+}
+.header--menu img{
+  height: 1.5rem;
+  width: 1.5rem;
 }
