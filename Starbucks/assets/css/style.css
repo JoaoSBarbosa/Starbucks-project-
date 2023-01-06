@@ -2,8 +2,9 @@
   Variaveis
 */
 :root{
-  --primary-color: #fff;
-  --border-color: #117850;
+  --primary-color:#117850;
+  --secundary-color: #c0dcd0;
+  --secundary-color-hover:#06d231;
   --max-container: 1140px;
 }
 /*
@@ -31,7 +32,7 @@ body{
   margin: 0 auto;
 }
 .bar{
-  background-color: var(--border-color);
+  background-color: var(--primary-color);
   height: 22px;
   width: 168px;
 }
@@ -64,7 +65,7 @@ h2{
   background-color: #454545;
 }
 header .line{
-  background-color: var(--border-color);
+  background-color: var(--primary-color);
   height: 10px;
 }
 .header--area{
@@ -132,7 +133,7 @@ header .line{
 .banner--images img{
   height: 9.25rem;
   width: 9.25rem;
-  border: 6px solid var(--border-color);
+  border: 6px solid var(--primary-color);
   border-radius: 50%;
   margin-right: 2.2rem;
 }
@@ -224,12 +225,10 @@ header .line{
 /*
   Estilização da area 4
 */
-
 .area4{
   display: grid;
   grid-template-columns: 450px 1fr;
   background-color: #e8e9ee;
-
 }
 .area4--content{
   padding: 9.37rem 5rem;
@@ -242,4 +241,55 @@ header .line{
   background-image: url('../img/bg3.jpg');
   background-position: left;
   background-repeat: no-repeat;
+}
+/* Estilização da area 5*/
+
+
+.area5{
+  background-image: url('../img/bg4.jpg');
+  background-size: cover;
+  background-position: center;
+  height:600px;
+}
+/*
+  Rodapé
+*/
+footer{
+  background-color: #333;
+  color: #fff;
+  padding: 80px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footer--area{
+  display: flex;
+  justify-content: space-around;
+}
+
+.dev--icones{
+  display: flex;
+  justify-content: space-around;
+}
+.creditos,
+.dev{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer a{
+  text-decoration: none;
+  color: var(--secundary-color);
+  text-transform: uppercase;
+}
+footer p{
+  margin: 1rem 0;
+}
+
+footer i{
+  font-size: 3rem;
+  color: var(--secundary-color);
+}
+footer i:hover,
+footer a:hover{
+  color: var(--secundary-color-hover);
 }
